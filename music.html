@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пісні</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="music.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Пісні</h1>
+    </header>
+    
+    <section class="song-list">
+        <div class="song-card">
+            <img src="album1.jpg" alt="Album 1">
+            <div class="song-info">
+                <h2>Пісня 1</h2>
+                <button class="play-btn" onclick="playSong('song1.mp3')">Play</button>
+            </div>
+        </div>
+        
+        <div class="song-card">
+            <img src="album2.jpg" alt="Album 2">
+            <div class="song-info">
+                <h2>Пісня 2</h2>
+                <button class="play-btn" onclick="playSong('song2.mp3')">Play</button>
+            </div>
+        </div>
+
+        <!-- Додати більше пісень... -->
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Пісні</p>
+    </footer>
+
+    <audio id="audio-player" style="display: none;" controls></audio>
+
+    <script>
+        function playSong(song) {
+            const player = document.getElementById('audio-player');
+            player.src = song;
+            player.play();
+        }
+    </script>
+</body>
+</html>

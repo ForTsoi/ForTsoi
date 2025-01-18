@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+    margin: 0;
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+    background-color: rgb(0, 0, 0);
+    display: flex; /* Включення Flexbox */
+    justify-content: center; /* Горизонтальне вирівнювання */
+    align-items: center; /* Вертикальне вирівнювання */
+    height: 100vh; /* Висота сторінки — 100% від вікна */
+    color: white;
+}
+.image-button {
+    width: 300px; /* Ширина кнопки */
+    height: 100px; /* Висота кнопки */
+    border: none;
+    border-radius: 5px; /* Закруглення країв */
+    background-image: url('vts1.jpg'); /* Встав тут шлях до фото */
+    background-size: cover; /* Фото покриває всю кнопку */
+    background-position: center; /* Центрування зображення */
+    cursor: pointer;
+    color: #4b4b4b; /* Фіолетовий колір тексту */
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь тексту */
+    text-align: center;
+    line-height: 50px; /* Центрування тексту по вертикалі */
+    transition: opacity 0.3s ease, transform 0.2s ease; /* Плавність змін */
+    position: absolute; /* Абсолютне позиціонування */
+}
+.image-button:hover {
+    opacity: 0.6; /* Зменшення прозорості до 60% */
+    transform: scale(1.05); /* Збільшує кнопку при наведенні */
+    color: #ffffff; /* Змінює текст на яскравий фіолетовий */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Ефект сяйва */
+}
+
+.image-button:active {
+    transform: scale(0.95); /* Зменшує кнопку при натисканні */
+}
+
+/* Координати першої кнопки */
+.button-1 {
+    width: 400px;
+    height: 110px;
+    top: 350px; /* Відступ зверху */
+    left: 750px; /* Відступ зліва */
+}
+
+/* Координати другої кнопки */
+.button-2 {
+    width: 300px;
+    height: 90px;
+    top: 470px; /* Відступ зверху */
+    left: 800px; /* Відступ зліва */
+}
+/* Координати третьої кнопки */
+.button-3 {
+    width: 350px;
+    height: 90px;
+    top: 570px; /* Відступ зверху */
+    left: 770px; /* Відступ зліва */
+}
+.button-4 {
+    width: 250px;
+    height: 90px;
+    top: 670px; /* Відступ зверху */
+    left: 820px; /* Відступ зліва */
+}
+.text {
+    position: absolute; /* Абсолютне позиціонування */
+    font-size: 20px; /* Розмір тексту */
+    color: #4b4b4b; /* Фіолетовий колір */
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px;
+}
+
+
+/* Координати першого тексту */
+.text-1 {
+    top: 50px; /* Відступ зверху */
+    left: 550px; /* Відступ зліва */
+}
+
+/* Координати другого тексту */
+.text-2 {
+    top: 150px; /* Відступ зверху */
+    left: 300px; /* Відступ зліва */
+}
+footer {
+    text-align: center;
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #4b4b4b;
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+}
+
+.menu-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+.image-button a {
+    text-decoration: none; /* Прибирає підкреслення */
+    color: inherit; /* Наслідує колір тексту кнопки */
+    display: block; /* Посилання займає всю кнопку */
+    width: 100%; /* Повна ширина кнопки */
+}
+.container {
+    position: relative; /* Батьківський контейнер для позиціонування */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Меню */
+.menu {
+    position: absolute;
+    top:0px; /* Відступ зверху */
+    display: flex;
+    justify-content: flex-start; /* Вирівнювання по лівому краю */
+    gap: 15px; /* Проміжок між елементами */
+    padding: 10px 20px;
+    background-color: #000000;
+}
+
+/* Елементи меню */
+.menu-item {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+}
+/* Верхнє меню авторизації */
+.scrollable-header {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  position: absolute;
+  top: 0%;
+  width: 97.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000; /* Темний фон */
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Відступ для наступного контенту */
+}
+
+.scrollable-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.scrollable-header .logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Прибирає підкреслення */
+  color: inherit; /* Наслідує колір тексту кнопки */
+}
+
+.scrollable-header .navigation {
+  position: relative;
+  left: 50px;
+  display: flex;
+  justify-content: space-between; /* Розподіл простору між елементами */
+  align-items: center;
+  width: auto; /* Динамічна ширина */
+}
+
+.scrollable-header .navigation a {
+  margin: 0 10px; /* Проміжок між пунктами меню */
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.scrollable-header .navigation a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #660000;
+}
+
+/* Кнопки авторизації */
+.scrollable-header .auth-buttons {
+  display: flex;
+  gap: 10px; /* Проміжок між кнопками */
+}
+
+.scrollable-header .login-button,
+.scrollable-header .register-button {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  background-color: #b10000; /* Червоний фон */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scrollable-header .login-button:hover,
+.scrollable-header .register-button:hover {
+  background-color: #0d0099; /* Яскравіше підсвічування */
+  box-shadow: 0 0 12px #ffffff; /* Ефект підсвічування */
+}
+
+.scrollable-header .login-button a,
+.scrollable-header .register-button a {
+  text-decoration: none; /* Прибирає підкреслення */
+  color: inherit; /* Наслідує колір тексту кнопки */
+  display: block; /* Посилання займає всю кнопку */
+  width: 100%; /* Повна ширина кнопки */
+}
+
+/* Анімація плавного зникнення */
+.scrollable-header .auth-buttons.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+  .carousel {
+    position: absolute; /* Абсолютне позиціонування */
+    top: 1300px; /* Відстань від верхнього краю сторінки */
+    left: 100; /* Відстань від лівого краю сторінки */
+    width: 95%; /* Ширина на всю сторінку */
+    height: 1000px; /* Фіксована висота */
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8); /* Напівпрозорий фон */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Тінь над каруселлю */
+    z-index: 1; /* Щоб елемент був над іншими */
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Висота відповідає контейнеру */
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; /* Кожен елемент займає всю ширину контейнера */
+    height: 100%; /* Висота відповідає контейнеру */
+    object-fit: cover; /* Масштабування зображень без обрізання */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Зображення на всю ширину */
+    height: 100%; /* Зображення на всю висоту */
+    object-fit: cover; /* Масштабування без спотворення */
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%; /* По центру висоти каруселі */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0; /* Відео стає видимим при наведенні */
+    border-radius: 50%;
+    z-index: 3; /* Щоб кнопки були над каруселлю */
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+  
+  .prev-btn {
+    left: 20px; /* Відступ зліва */
+  }
+  
+  .next-btn {
+    right: 20px; /* Відступ справа */
+  }
+  .how-it-works {
+    position: absolute;
+    top: 900px; ;
+    left: 550px; ;
+    text-align: center;
+    color: #fff;
+    background-color: #000000; /* Темний фон */
+    padding: 40px 20px;
+  }
+  
+  .how-it-works h2 {
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #7e0000; /* Основний колір заголовка */
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Відступи між кроками */
+    position: relative;
+  }
+  
+  .step {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .step .icon {
+    width: 80px;
+    height: 80px;
+    background: #ffffff; /* Коло під іконку */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+  }
+  
+  .step .icon img {
+    width: 100px; /* Розмір іконки */
+    height: 100px;
+  }
+  
+  .step h3 {
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #660000;
+  }
+  
+  .step p {
+    font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ccc;
+  }
+  
+  .line {
+    height: 2px;
+    width: 40px;
+    background: #ffffff;
+    align-self: center;
+  }
+  /* Бургер-меню */
+/* Іконка бургер-меню у вигляді зірок */
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 785px;
+  left: 15px;
+  z-index: 110;
+}
+
+.burger-icon .star {
+  font-size: 20px;
+  color: #ffdd00; /* Жовта зірка */
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.burger-icon.active .star:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+
+.burger-icon.active .star:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active .star:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -10px);
+}
+/* Стороннє меню */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Ховаємо меню повністю */
+  width: 250px;
+  height: 100vh;
+  background-color: #121212; /* Темний фон */
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+  transition: left 0.3s ease;
+  z-index: 105; /* Меню над каруселлю */
+  overflow-y: auto; /* Додаємо прокрутку, якщо контент більший за висоту */
+}
+
+.side-menu.open {
+  left: 0; /* Відкриваємо меню */
+}
+
+/* Анімовані зірки */
+.side-menu::before {
+  content: "✦ ✧ ✦ ✧ ✦";
+  font-size: 18px;
+  color: #ffdd00; /* Жовті зірки */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: stars 5s linear infinite;
+}
+
+/* Анімація зірок */
+@keyframes stars {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+}
+
+/* Заголовок меню */
+.menu-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #ffdd00; /* Жовтий */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+  z-index: 105; /* Меню над каруселлю */
+}
+
+.menu-header p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* Пункти меню */
+.side-menu ul {
+  list-style: none;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin: 20px 0;
+}
+
+.side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+  color: #ffdd00; /* Жовтий */
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+}
+
+/* Футер меню */
+.menu-footer {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+   z-index: 105; /* Меню над каруселлю */
+}
+
+.menu-footer p {
+  font-size: 14px;
+  color: #ffdd00;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.profile {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #000000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Прихований блок профілю */
+.profile.hidden {
+  display: none;
+}
+
+/* Зображення профілю */
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Кнопка "Вийти" */
+.profile button {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  background: #696969;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile button:hover {
+  background: #c9c9c9;
+}

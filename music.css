@@ -1,0 +1,118 @@
+/* Загальні стилі */
+body {
+    background-color: #121212; /* Темний фон */
+    color: #fff; /* Білий текст */
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://source.unsplash.com/random/1920x1080'); /* Фонове зображення */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6); /* затемнити фон */
+    overflow-y: auto; /* Прокрутка сторінки */
+}
+
+/* Стиль заголовку */
+.header {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffdd00;
+    text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+}
+
+/* Секція пісень */
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Картка пісні */
+.song-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.song-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.song-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Інформація про пісню */
+.song-info h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #fff;
+    text-shadow: 0 0 8px #ffdd00;
+}
+
+.play-btn {
+    background-color: #b10000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover {
+    background-color: #660000;
+}
+
+/* Футер */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #ffdd00;
+}
+
+/* Анімація для кнопки Play */
+@keyframes playAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.play-btn {
+    animation: playAnimation 2s infinite;
+}

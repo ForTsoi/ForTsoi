@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Увійти</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="a3faf6ea9b3b579a5bdd56d24f2d61aa.999x999x1.png" type="image/x-icon">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="logo">
+      <img src="a3faf6ea9b3b579a5bdd56d24f2d61aa.999x999x1.png" alt="Кіно" class="logo-image">
+      <h1>Увійти</h1>
+    </div>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Ваш логін" required>
+      <input type="password" id="loginPassword" placeholder="Ваш пароль" required>
+      <button type="submit">Увійти</button>
+    </form>
+    <a href="register.html" class="switch-link">Ще не зареєстровані? Зареєструватися</a>
+    <br>
+    <button onclick="window.location.href='цой.html'" class="back-button">Назад</button>
+  </div>
+  <footer>
+    <p align="top">&copy; Yura&GPT project</p>
+  </footer>
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Отримання введених даних
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+
+      // Отримання збережених даних з LocalStorage
+      const savedUser = JSON.parse(localStorage.getItem("currentUser"));
+
+      // Перевірка логіна і пароля
+      if (savedUser && savedUser.username === username && savedUser.password === password) {
+        // Збереження стану авторизації
+        localStorage.setItem("isLoggedIn", true);
+        localStorage.setItem("loggedInUser", JSON.stringify(savedUser));
+
+        // Перенаправлення на головну
+        window.location.href = "цой.html";
+      } else {
+        alert("Невірний логін або пароль. Спробуйте ще раз.");
+      }
+    });
+  </script>
+   <script src="tsoi.js"></script>
+</body>
+</html>

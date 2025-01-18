@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+  margin: 0;
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+}
+.container1 {
+
+    position: relative;
+    left: 400px;
+    top: 100px;
+    width: 1120px;
+    height: 630px;
+  }
+
+  .white-text1 {
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    left: 410px;
+    top: -55px;
+    }
+
+.white-text {
+  color: white;
+  position: absolute;
+  left: 450px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container1:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container1:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+
+  .container2 {
+    position: relative;
+    left: 400px;
+    top: 200px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container2:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container2:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container3 {
+    position: relative;
+    left: 400px;
+    top: 300px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container3:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container3:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container4 {
+    position: relative;
+    left: 400px;
+    top: 400px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container4:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container4:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container5 {
+    position: relative;
+    left: 400px;
+    top: 500px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container5:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container5:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container6 {
+    position: relative;
+    left: 400px;
+    top: 600px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container6:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container6:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container7 {
+    position: relative;
+    left: 400px;
+    top: 700px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container7:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container7:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container8 {
+    position: relative;
+    left: 400px;
+    top: 800px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container8:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container8:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  .container9 {
+    position: relative;
+    left: 400px;
+    top: 900px;
+    width: 1120px;
+    height: 630px;
+  }
+.white-text2 {
+  color: white;
+  position: absolute;
+  left: 510px;
+  top: 620px;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо відео */
+    width: 100%; /* Встановлюємо розмір відео */
+    height: 100%;
+    opacity: 0; /* Відео спочатку невидиме */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не можна взаємодіяти з відео до наведення */
+  }
+  
+  .container9:hover .photo {
+    opacity: 0; /* Картинка стає прозорою при наведенні */
+  }
+  
+  .container9:hover .video {
+    opacity: 1; /* Відео стає видимим при наведенні */
+    pointer-events: auto; /* Дозволяє взаємодіяти з відео */
+  }
+
+  /* Верхнє меню авторизації */
+.scrollable-header {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  position: absolute;
+  top: 0%;
+  width: 97.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000; /* Темний фон */
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Відступ для наступного контенту */
+}
+
+.scrollable-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.scrollable-header .logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Прибирає підкреслення */
+  color: inherit; /* Наслідує колір тексту кнопки */
+}
+
+.scrollable-header .navigation a {
+  position: relative;
+  left: 20%;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.3s, text-shadow 0.3s;
+    text-decoration: none; /* Прибирає підкреслення */
+    color: inherit; /* Наслідує колір тексту кнопки */
+}
+
+.scrollable-header .navigation a:hover {
+  color: #fff; /* Підсвітка тексту */
+  text-shadow: 0 0 8px #660000; /* Ефект підсвічування */
+}
+
+.scrollable-header .auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.scrollable-header .login-button,
+.scrollable-header .register-button {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  background-color: #b10000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scrollable-header .login-button:hover,
+.scrollable-header .register-button:hover {
+  background-color: #0d0099; /* Яскравіше підсвічування */
+  box-shadow: 0 0 12px #ffffff; /* Ефект підсвічування */
+}
+.scrollable-header .login-button a,
+.scrollable-header .register-button a
+{text-decoration: none; /* Прибирає підкреслення */
+  color: inherit; /* Наслідує колір тексту кнопки */
+  display: block; /* Посилання займає всю кнопку */
+  width: 100%; /* Повна ширина кнопки */}
+ /* Бургер-меню */
+/* Іконка бургер-меню у вигляді зірок */
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: fixed; /* Фіксоване позиціювання */
+  top: 785px;
+  left: 15px;
+  z-index: 110;
+}
+
+.burger-icon .star {
+  font-size: 20px;
+  color: #ffdd00; /* Жовта зірка */
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.burger-icon.active .star:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+
+.burger-icon.active .star:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active .star:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -10px);
+}
+/* Стороннє меню */
+.side-menu {
+  position: fixed; /* Фіксація меню на екрані */
+  top: 0;
+  left: -300px; /* Ховаємо меню за межі екрану */
+  width: 250px;
+  height: 100vh; /* Повна висота вікна */
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+  transition: left 0.3s ease;
+  z-index: 105;
+  overflow: hidden; /* Вимкнути прокрутку */
+}
+
+.side-menu.open {
+  left: 0; /* Відкриваємо меню */
+}
+
+/* Анімовані зірки */
+.side-menu::before {
+  content: "✦ ✧ ✦ ✧ ✦";
+  font-size: 18px;
+  color: #ffdd00; /* Жовті зірки */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: stars 5s linear infinite;
+}
+
+/* Анімація зірок */
+@keyframes stars {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+}
+
+/* Заголовок меню */
+.menu-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #ffdd00; /* Жовтий */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+  z-index: 105; /* Меню над каруселлю */
+}
+
+.menu-header p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* Пункти меню */
+.side-menu ul {
+  list-style: none;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin: 20px 0;
+}
+
+.side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+  color: #ffdd00; /* Жовтий */
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+}
+
+/* Футер меню */
+.menu-footer {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+   z-index: 105; /* Меню над каруселлю */
+}
+
+.menu-footer p {
+  font-size: 14px;
+  color: #ffdd00;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.profile {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #000000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Прихований блок профілю */
+.profile.hidden {
+  display: none;
+}
+
+/* Зображення профілю */
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Кнопка "Вийти" */
+.profile button {
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+  background: #696969;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile button:hover {
+  background: #c9c9c9;
+}
+footer {
+  text-align: center;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #4b4b4b;
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+}

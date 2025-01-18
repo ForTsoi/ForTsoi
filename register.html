@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="icon" href="a3faf6ea9b3b579a5bdd56d24f2d61aa.999x999x1.png" type="image/x-icon">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="logo">
+      <img src="a3faf6ea9b3b579a5bdd56d24f2d61aa.999x999x1.png" alt="Кіно" class="logo-image">
+      <h1>Реєстрація</h1>
+    </div>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Придумайте логін" required>
+      <input type="url" id="profilePic" placeholder="Посилання на фото профілю (необов'язково)">
+      <input type="password" id="password" placeholder="Придумайте пароль" required>
+      <button type="submit">Зареєструватися</button>
+    </form>
+    <a href="login.html" class="switch-link">Вже маєте акаунт? Увійти</a>
+    <br>
+    <button onclick="window.location.href='цой.html'" class="back-button">Назад</button>
+  </div>
+  <footer>
+    <p align="top">&copy; Yura&GPT project</p>
+  </footer>
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Отримання значень з форми
+      const username = document.getElementById("username").value;
+      const profilePic = document.getElementById("profilePic").value || "default-profile.png"; // Якщо поле пусте, використовуємо зображення за замовчуванням
+      const password = document.getElementById("password").value;
+
+      // Створюємо об'єкт користувача
+      const user = { username, profilePic, password };
+
+      // Зберігаємо дані користувача в LocalStorage
+      localStorage.setItem("currentUser", JSON.stringify(user));
+
+      // Перенаправлення на головну сторінку
+      window.location.href = "цой.html";
+    });
+  </script>
+   <script src="tsoi.js"></script>
+</body>
+</html>
+</html>

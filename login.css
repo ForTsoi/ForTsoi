@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181818; /* Темний фон */
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Мінімалістичний сучасний стиль */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('vts1.jpg'); /* Фонова картинка з "Кіно" */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.auth-container {
+  background: rgba(24, 24, 24, 0.9); /* Напівпрозорий чорний */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 400px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.auth-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: 'Impact', sans-serif;
+  text-transform: uppercase;
+  color: #8f00ff; /* Фіолетовий */
+}
+
+.auth-container form {
+  margin-top: 20px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.auth-container input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #8f00ff, #4b0082); /* Градієнт */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(143, 0, 255, 0.8);
+}
+
+.switch-link {
+  margin-top: 15px;
+  display: block;
+  text-decoration: none;
+  color: #8f00ff;
+  transition: color 0.3s ease;
+}
+
+.switch-link:hover {
+  color: #4b0082;
+}
+
+footer {
+  text-align: center;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #4b4b4b;
+  font-family: 'Russo One', sans-serif; /* Стиль шрифту */
+}
